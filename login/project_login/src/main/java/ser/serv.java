@@ -37,7 +37,8 @@ public class serv extends HttpServlet {
 
             int rowsInserted = preparedStatement.executeUpdate();
 
-            dispatcher = request.getRequestDispatcher("registration.jsp");
+            dispatcher = request.getRequestDispatcher("registration.html");
+            response.setContentType("text/html");
             if (rowsInserted > 0) {
                 request.setAttribute("status", "success");
             } else {

@@ -47,11 +47,11 @@ public class Log extends HttpServlet {
 	                response.sendRedirect("https://sagitor-fitness-page-mxo8.vercel.app/home");
 	                return;
 	                
-	              //dispatcher = request.getRequestDispatcher("index.jsp");
+	            //  dispatcher = request.getRequestDispatcher("index.jsp");
 	              
 	            } else {
 	                request.setAttribute("status", "error");
-	                dispatcher = request.getRequestDispatcher("login.jsp");
+	                dispatcher = request.getRequestDispatcher("login.html");
 	                dispatcher.forward(request, response);
 	            }
 
